@@ -1,3 +1,7 @@
+<!-- yarkr:badges:start -->
+[![Indexed on Yarkr](https://api.yarkr.com/functions/v1/api/api/v1/badges/repos/ufo-ai/ufo-core/version.svg)](https://yarkr.com/arks/ufo-ai/ufo-core)
+<!-- yarkr:badges:end -->
+
 <div align="center">
 
 ```
@@ -117,6 +121,40 @@ PATH="<dir>/chrome-headless-shell-mac-arm64:$PATH" make serve
 | `make debugger`, then `uv run ufoctl debugger` | Opens turns, steps, transcripts, and memory in a browser. Needs pnpm; run `make debugger` before `make serve`. |
 
 </details>
+
+<!-- yarkr:install:start -->
+## Install with Yarkr
+
+This repo is indexed on [Yarkr](https://yarkr.com/arks/ufo-ai/ufo-core) as the ark [ufo-ai/ufo-core](https://yarkr.com/arks/ufo-ai/ufo-core), so its skills install into Claude Code, Codex, Cursor and other agent harnesses with one command.
+
+### CLI
+
+Install the whole ark, which Yarkr keeps equal to this repo:
+
+```bash
+npx yarkr-cli sync ufo-ai/ufo-core
+```
+
+Or add individual skills:
+
+```bash
+npx yarkr-cli add skill:ufo-ai/ufo-core/code-review
+npx yarkr-cli add skill:ufo-ai/ufo-core/code-review-automation
+npx yarkr-cli add skill:ufo-ai/ufo-core/coding
+```
+
+No Node.js? `curl -fsSL https://yarkr.com/install.sh | sh` (macOS, Linux) or `irm https://yarkr.com/install.ps1 | iex` (Windows PowerShell) installs `yarkr` as a standalone binary; then type `yarkr` in place of `npx yarkr-cli`.
+
+### MCP
+
+Connect your agent to the ark over MCP:
+
+```bash
+npx yarkr-cli mcp add ufo-ai/ufo-core
+```
+
+Or point any MCP client at `https://api.yarkr.com/functions/v1/api/mcp/o/ufo-ai/ufo-core`.
+<!-- yarkr:install:end -->
 
 ## How it works
 
